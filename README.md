@@ -33,6 +33,10 @@ To run the project, execute the following command in the projects root directory
 python ./flappy_bird.py
 ```
 
+## Known bugs:
+
+- Game crashes when exiting using escape during gameplay
+
 ## Todo:
 
 - Command line arguments
