@@ -18,7 +18,8 @@ class RenderSystem (esper.Processor):
 
 			# create layers
 			draw_layers = []
-			for i in range(layers.LAYER_PLAYER):
+			for i in range(layers.LAYER_COUNT):
+				# create transparent surfaces for each layer
 				draw_layers.append(pygame.surface.Surface((viewport.w, viewport.h), pygame.SRCALPHA, 32))
 				draw_layers[i] = draw_layers[i].convert_alpha()
 
@@ -27,6 +28,7 @@ class RenderSystem (esper.Processor):
 
 			# draw colliders
 			if self.debug:
+				# the extra padding to add to the collider boxes for visibility
 				debug_width = 5
 				for actor, (position, collider) in self.world.get_components(Position, BoxCollider):
 					# calculate top-left of collider

@@ -15,10 +15,11 @@ class Application (object):
 		while True:
 			for event in pygame.event.get():
 				if event.type == pygame.QUIT:
-					self.scene.stop()
+					self.shutdown()
 					return True
 				if event.type == pygame.KEYDOWN:
 					if event.key == pygame.K_ESCAPE:
+						self.shutdown()
 						return True
 
 			if self.scene != None:
@@ -33,3 +34,7 @@ class Application (object):
 				return True
 
 			self.window.refresh()
+
+	def shutdown(self):
+		if self.scene != None:
+			self.scene.stop()
