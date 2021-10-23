@@ -22,7 +22,7 @@ After installing python and adding it to your path, the dependencies can be auto
 
 **Linux**
 ```
-python -m pip install -r ./requirements.txt
+sh scripts/linux-setup.sh
 ```
 
 ### Run
@@ -30,12 +30,10 @@ python -m pip install -r ./requirements.txt
 To run the project, execute the following command in the projects root directory.
 
 ```
-python ./flappy_bird.py
+python ./flappy_bird.pyw
 ```
 
-## Known bugs:
-
-- Game crashes when exiting using escape during gameplay
+...or just execute the python.pyw file directly.
 
 ## Todo:
 
