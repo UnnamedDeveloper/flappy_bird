@@ -35,6 +35,10 @@ python ./flappy_bird.pyw
 
 ...or just execute the python.pyw file directly.
 
+## Assets
+
+The assets used in this repository are from [this](https://github.com/samuelcust/flappy-bird-assets) GitHub repository.
+
 ## Todo:
 
 - Command line arguments
